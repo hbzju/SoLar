@@ -69,7 +69,7 @@ CUDA_VISIBLE_DEVICES=0 python -u train.py --exp-dir experiment/CIFAR-10 \
 
 **The biased pseudo-labels in PLL.**
 
-![bias](resources/biased-label.png)
+![bias](resources/biased-label.jpg)
 
 (a) An input image with three candidate labels, where the ground-truth is Mule. (b) The real/estimated class distribution (by counting real/predicted labels) on a long-tailed version of CIFAR10 dataset with partial labels (more details in Section 4). The class prior estimated by SoLar is very close to the real one, while PRODEN fails to recognize some tail labels. (c) Class-wise performance comparison of PRODEN and SoLar on the same dataset, where SoLar performs much better on data-scarce classes.
 
@@ -83,9 +83,11 @@ Performance comparisons on CIFAR10-LT and CIFAR100-LT datasets.
 
 Different shots accuracy comparisons.
 
-![bias](resources/shot-acc.png)
+![shot-acc](resources/shot-acc.png)
 
 **Incorporating with long-tailed learning algorithm**
 
 Performance of SoLar with the  [Logit Adjustment](https://arxiv.org/abs/2007.07314) algorithm.
+
+![la](resources/la-algorithm.png)
 
