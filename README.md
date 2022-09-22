@@ -55,16 +55,6 @@ CUDA_VISIBLE_DEVICES=3 python -u train.py --exp-dir experiment/SUN397 --data-dir
    --est_epochs 20 --rho_range 0.2,0.5 --gamma 0.05,0.01
 ```
 
-**Data Preparation**
-
-```shell
-CUDA_VISIBLE_DEVICES=0 python -u train.py --exp-dir experiment/CIFAR-10 \
-  --dataset cifar10 --num-class 10 --partial_rate 0.5 --imb_type exp --imb_ratio 100\
-  --est_epochs 100 --rho_range 0.2,0.6 --gamma 0.1,0.01
-```
-
-
-
 ## Results
 
 **The biased pseudo-labels in PLL.**
