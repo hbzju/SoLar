@@ -49,7 +49,7 @@ CUDA_VISIBLE_DEVICES=2 python -u train.py --exp-dir experiment/CUB200 --data-dir
    --est_epochs 20 --rho_range 0.2,0.5 --gamma 0.05,0.01
 
 # Run SUN-397
-CUDA_VISIBLE_DEVICES=3 python -u train.py --exp-dir experiment/SUN397 --data-dir ~/Sun_dataset/sun397\
+CUDA_VISIBLE_DEVICES=3 python -u train.py --exp-dir experiment/SUN397 --data-dir ~/sun397\
    --dataset sun397 --num-class 397 --partial_rate 0.05 \
    --epochs 200 --queue_length 16 --batch-size 128 --lr 0.01 --wd 1e-5 --cosine \
    --est_epochs 20 --rho_range 0.2,0.5 --gamma 0.05,0.01
