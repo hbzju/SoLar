@@ -9,7 +9,7 @@ This is a [PyTorch](http://pytorch.org) implementation of our **NeurIPS 2022** p
 **Affliations:** Zhejiang University, University of Wisconsin-Madison, Chongqing University
 
 ```
- @article{wang2022pico,
+ @article{wang2022solar,
       title={SoLar: Sinkhorn Label Refinery for Imbalanced Partial-Label Learning},
       author={Wang, Haobo and Xia, Mingxuan and Li, Yixuan and Mao, Yuren and Feng, Lei and Chen, Gang and Zhao, Junbo},
       journal={NeurIPS},
