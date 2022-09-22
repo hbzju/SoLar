@@ -29,7 +29,7 @@ For the SUN397 dataset, we modified the source code of ```torchvision.datasets.S
 
 **Start Running**
 
-We provide the following shell codes for model training. 
+We provide the following shell codes for model training. Note that we implemented two methods (online/offline) for estimating the class prior. The offline mode requires traveling the whole dataset again, while the online mode does not. We particularly suggest using the online mode for the large-scale SUN397 dataset.
 
 ```shell
 # Run CIFAR-10
