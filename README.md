@@ -85,9 +85,9 @@ Different shots accuracy comparisons.
 
 ![shot-acc](resources/shot-acc.png)
 
-**Incorporating with long-tailed learning algorithm**
+**Incorporating SoLar with long-tailed learning algorithm**
 
-Performance of SoLar with the  [Logit Adjustment](https://arxiv.org/abs/2007.07314) algorithm.
+Performance of SoLar with the long-tailed learning algorithm [Logit Adjustment](https://arxiv.org/abs/2007.07314). SoLar-LA further improves upon SoLar by 6.72% on CIFAR10-LT. This suggests that SoLar is compatible with existing LTL methods and opens the door to exploring more advanced LTL techniques.
 
 ![la](resources/la-algorithm.png)
 
