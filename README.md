@@ -6,8 +6,6 @@ This is a [PyTorch](http://pytorch.org) implementation of our **NeurIPS 2022** p
 
 **Authors:** Haobo Wang, Mingxuan Xia, Yixuan Li, Yuren Mao, Lei Feng, Gang Chen, Junbo Zhao
 
-**Affliations:** Zhejiang University, University of Wisconsin-Madison, Chongqing University
-
 ```
  @article{wang2022solar,
       title={SoLar: Sinkhorn Label Refinery for Imbalanced Partial-Label Learning},
