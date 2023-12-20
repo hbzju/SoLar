@@ -13,13 +13,6 @@ def load_cifar(args):
     batch_size=args.batch_size
 
     if args.dataset == 'cifar10':
-        test_dataset = dsets.CIFAR10(root='./data', train=False, transform=test_transform, download=True)
-    elif args.dataset == 'cifar100':
-        test_dataset = dsets.CIFAR100(root='./data', train=False, transform=test_transform, download=True)
-    test_loader = torch.utils.data.DataLoader(dataset=test_dataset, batch_size=batch_size*4, shuffle=False, num_workers=4)
-    # set test dataloader
-
-    if args.dataset == 'cifar10':
         mean, std = (0.4914, 0.4822, 0.4465), (0.247, 0.243, 0.261)
         DatasetClass = CIFAR10_Augmentention
     elif args.dataset == 'cifar100':
@@ -31,6 +24,13 @@ def load_cifar(args):
     test_transform = transforms.Compose(
             [transforms.ToTensor(),
             transforms.Normalize(mean, std)])
+
+    if args.dataset == 'cifar10':
+        test_dataset = dsets.CIFAR10(root='./data', train=False, transform=test_transform, download=True)
+    elif args.dataset == 'cifar100':
+        test_dataset = dsets.CIFAR100(root='./data', train=False, transform=test_transform, download=True)
+    test_loader = torch.utils.data.DataLoader(dataset=test_dataset, batch_size=batch_size*4, shuffle=False, num_workers=4)
+    # set test dataloader
 
     print('==> Loading local data copy in the long-tailed setup')
     data_file = "{ds}_{pr}_imb_{it}{imf}_sd{sd}.npy".format(
